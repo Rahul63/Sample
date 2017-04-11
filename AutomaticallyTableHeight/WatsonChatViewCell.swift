@@ -24,12 +24,13 @@ class WatsonChatViewCell: UITableViewCell,UITableViewDelegate,UITableViewDataSou
         super.awakeFromNib()
         
         
-        self.chatBubbleTableView.rowHeight = UITableViewAutomaticDimension
-        self.chatBubbleTableView.estimatedRowHeight = 1000
+//        self.chatBubbleTableView.rowHeight = UITableViewAutomaticDimension
+        self.chatBubbleTableView.rowHeight = 100
         chatBubbleTableView.translatesAutoresizingMaskIntoConstraints = false
         //self.chatBubbleTableView.isScrollEnabled = false
         //tableView.backgroundColor = UIColor.white
-        self.chatBubbleTableView.reloadData()
+        //self.chatBubbleTableView.reloadData()
+        self.setUpcell()
     }
     
     
@@ -42,7 +43,7 @@ class WatsonChatViewCell: UITableViewCell,UITableViewDelegate,UITableViewDataSou
     
         chatBubbleTableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
     
-        chatBubbleTableView.heightAnchor.constraint(greaterThanOrEqualTo: 200).isActive = true
+        chatBubbleTableView.heightAnchor.constraint(greaterThanOrEqualTo: self.chatBubbleTableView.heightAnchor).isActive = true
         
     }
     
