@@ -42,7 +42,7 @@ class WatsonChatViewCell: UITableViewCell,UITableViewDelegate,UITableViewDataSou
     
         chatBubbleTableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
     
-        chatBubbleTableView.heightAnchor.constraint(greaterThanOrEqualTo: 200).isActive = true
+        //chatBubbleTableView.heightAnchor.constraint(greaterThanOrEqualTo: 200).isActive = true
         
     }
     
