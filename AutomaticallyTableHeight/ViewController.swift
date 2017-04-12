@@ -14,7 +14,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        chatTableView.estimatedRowHeight = 1000
+        chatTableView.estimatedRowHeight = 100
+        self.chatTableView.rowHeight = UITableViewAutomaticDimension
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -42,7 +43,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         
-        return 200//UITableViewAutomaticDimension
+        return UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
